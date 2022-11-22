@@ -1,0 +1,108 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import "./utils/variables.scss";
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding    : 0;
+  margin     : 0;
+  box-sizing : border-box;
+  font-size  : $fontMd;
+}
+
+html {
+  background: $bgColor;
+}
+
+h1 {
+  text-align: center;
+  color     : #fff;
+  font-size : $fontLg;
+
+  @media (min-width: $breakpointMd) {
+    font-size: $fontXL;
+  }
+}
+
+select {
+  padding      : 0.5rem;
+  border-radius: 6px;
+  border       : $inputBorder;
+  font-size    : $fontMd;
+  font-weight  : 500;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+label {
+  font-weight: 500;
+  user-select: none;
+  cursor     : pointer;
+  font-size  : $fontSm;
+
+  @media (min-width: $breakpointMd) {
+    font-size: $fontMd;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  padding      : 0.5rem 0.5rem;
+  border-radius: 6px;
+  border       : $inputBorder;
+  font-size    : 1rem;
+  font-weight  : 500;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  font-weight  : 500;
+  cursor       : pointer;
+  font-size    : $fontMd;
+  border-radius: 8px;
+  @extend .transition;
+}
+
+.App {
+  padding: 2rem 0;
+}
+
+.container {
+  margin   : 0 auto;
+  padding  : 0.5rem;
+  max-width: 1024px;
+
+  @media (min-width: $breakpointSm) {
+    padding: 1rem;
+  }
+}
+
+.status-archived {
+  color      : #999;
+  font-weight: 500;
+}
+
+.status-active {
+  color      : $greenAccent;
+  font-weight: 500;
+}
+
+.error {
+  text-align : center;
+  font-weight: 500;
+  color      : $redAccent;
+  margin-top : 1rem;
+  font-size  : $fontSm;
+
+  @media (min-width: $breakpointMd) {
+    font-size: $fontMd;
+  }
+}

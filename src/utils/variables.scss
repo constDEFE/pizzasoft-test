@@ -1,0 +1,23 @@
+$font         : "Roboto", sans-serif;
+$fontXL       : 32px;
+$fontLg       : 24px;
+$fontMd       : 16px;
+$fontSm       : 14px;
+$fontXS       : 12px;
+$bgTransparent: #00000075;
+$bgColor      : rgb(14, 16, 29);
+$redAccent    : rgb(245, 57, 57);
+$redBorder    : rgb(223, 56, 56);
+$grayAccent   : #e5e5e5;
+$grayBorder   : #ddd;
+$grayButton   : #aaa;
+$greenAccent  : rgb(17, 184, 81);
+$greenBorder  : rgb(20, 167, 76);
+$breakpointSm : 640px;
+$breakpointMd : 768px;
+$inputBorder  : 1px solid #aaa;
+
+.transition {
+  transition-duration       : 100ms;
+  transition-timing-function: ease-out;
+}

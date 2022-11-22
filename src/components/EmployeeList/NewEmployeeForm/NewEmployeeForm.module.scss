@@ -1,0 +1,55 @@
+@import "../../../utils/variables.scss";
+
+.addButton {
+  padding   : 0.5rem 2rem;
+  max-width : 0 auto;
+  color     : #fff;
+  background: $greenAccent;
+  border    : 2px solid $greenBorder;
+
+  &:hover {
+    background: $greenBorder;
+  }
+}
+
+.background {
+  position   : fixed;
+  z-index    : 10;
+  top        : 0;
+  left       : 0;
+  width      : 100vw;
+  height     : 100vh;
+  background : $bgTransparent;
+  display    : flex;
+  align-items: center;
+}
+
+.modal {
+  position     : relative;
+  z-index      : 20;
+  background   : #fff;
+  margin       : 0 auto;
+  padding      : 2rem;
+  border-radius: 1rem;
+  border       : none;
+  max-width    : 420px;
+  width        : 90%;
+
+  @media (min-width: $breakpointSm) {
+    width: 70%;
+  }
+}
+
+.closeButton {
+  position  : absolute;
+  right     : -0.66rem;
+  top       : -0.66rem;
+  background: $redAccent;
+  border    : 2px solid $redBorder;
+  padding   : 0.25rem;
+  color     : #fff;
+
+  &:hover {
+    background: $redBorder;
+  }
+}

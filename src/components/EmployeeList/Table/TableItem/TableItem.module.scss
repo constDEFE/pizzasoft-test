@@ -1,0 +1,45 @@
+@import "../../../../utils/variables.scss";
+
+.item {
+  padding: 0.5rem 0.25rem;
+
+  @media (min-width: $breakpointSm) {
+    padding: 0.75rem 0.5rem;
+  }
+
+  @media (min-width: $breakpointMd) {
+    padding: 0.75rem;
+  }
+}
+
+.row {
+  cursor: pointer;
+  @extend .transition;
+
+  &:hover {
+    color: $greenAccent;
+  }
+}
+
+.accentRow {
+  @extend .row;
+  background   : $grayAccent;
+  border-top   : 1px solid $grayBorder;
+  border-bottom: 1px solid $grayBorder;
+}
+
+.checkbox {
+  display: none;
+}
+
+.text {
+  font-size: $fontXS;
+
+  @media (min-width: $breakpointSm) {
+    font-size: $fontSm;
+  }
+
+  @media (min-width: $breakpointMd) {
+    font-size: $fontMd;
+  }
+}

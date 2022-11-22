@@ -1,0 +1,26 @@
+@import "../../utils/variables.scss";
+
+.arrow {
+  color: #fff;
+  @extend .transition;
+}
+
+.container {
+  position     : absolute;
+  bottom       : 5rem;
+  padding      : 0.25rem;
+  border-radius: 100%;
+  border       : 3px solid #fff;
+  color        : #fff;
+  cursor       : pointer;
+  @extend .transition;
+
+  &:hover {
+    transform   : scale(1.05);
+    border-color: $greenAccent;
+
+    .arrow {
+      color: $greenAccent;
+    }
+  }
+}

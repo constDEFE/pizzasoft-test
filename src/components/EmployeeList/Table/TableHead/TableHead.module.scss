@@ -1,0 +1,42 @@
+@import "../../../../utils/variables.scss";
+
+.item {
+  display    : flex;
+  padding    : 0.5rem 0.25rem;
+  align-items: center;
+  gap        : 0.25rem;
+  cursor     : pointer;
+
+  @media (min-width: $breakpointSm) {
+    padding: 0.75rem 0.25rem;
+  }
+
+  @media (min-width: $breakpointMd) {
+    padding: 0.75rem;
+  }
+}
+
+.row {
+  border-bottom: $inputBorder;
+}
+
+.text {
+  font-size: $fontXS;
+
+  @media (min-width: $breakpointSm) {
+    font-size: $fontSm;
+  }
+
+  @media (min-width: $breakpointMd) {
+    font-size: $fontMd;
+  }
+}
+
+.column {
+  position: relative;
+}
+
+.label {
+  font-weight: 600;
+  @extend .text
+}

@@ -1,0 +1,78 @@
+@import "../../../utils/variables.scss";
+
+.wrapper {
+  color         : #fff;
+  display       : flex;
+  flex-direction: column;
+  gap           : 2rem;
+  max-width     : 440px;
+  width         : 100%;
+}
+
+.form {
+  padding       : 0 2rem;
+  display       : flex;
+  flex-direction: column;
+  gap           : 1.25rem;
+}
+
+.field {
+  position: relative;
+
+  input {
+    width: 100%;
+
+    &:disabled {
+      color: black;
+    }
+  }
+}
+
+.checkboxField {
+  display        : flex;
+  justify-content: space-between;
+  @extend .field;
+}
+
+.checkbox {
+  display: none;
+}
+
+.select {
+  width: 100%;
+
+  &:disabled {
+    color: black;
+  }
+}
+
+.button {
+  padding: 0.5rem 1rem;
+}
+
+.editButton {
+  background: $grayAccent;
+  border    : 2px solid $grayButton;
+  @extend .button;
+
+  &:hover {
+    background: $grayButton;
+  }
+}
+
+.saveButton {
+  background: $greenAccent;
+  border    : 2px solid $greenBorder;
+  color     : #fff;
+  @extend .button;
+
+  &:hover {
+    background: $greenBorder;
+  }
+}
+
+.success {
+  text-align : center;
+  font-weight: 500;
+  color      : $greenAccent;
+}

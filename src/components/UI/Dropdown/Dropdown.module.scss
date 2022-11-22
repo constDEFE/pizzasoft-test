@@ -1,0 +1,61 @@
+@import "../../../utils/variables.scss";
+
+.select {
+  display    : flex;
+  padding    : 0.5rem 0.25rem;
+  align-items: center;
+  gap        : 0.25rem;
+  cursor     : pointer;
+
+  @media (min-width: $breakpointSm) {
+    padding: 0.75rem 0.25rem;
+  }
+
+  @media (min-width: $breakpointMd) {
+    padding: 0.75rem;
+  }
+}
+
+.label {
+  display    : flex;
+  align-items: center;
+  gap        : 0.25rem;
+}
+
+.text {
+  font-size: $fontXS;
+
+  @media (min-width: $breakpointSm) {
+    font-size: $fontSm;
+  }
+
+  @media (min-width: $breakpointMd) {
+    font-size: $fontMd;
+  }
+}
+
+.dropdown {
+  position                  : absolute;
+  left                      : 0;
+  top                       : 100%;
+  width                     : 100%;
+  background                : #fff;
+  border                    : 1px solid $grayBorder;
+  border-bottom-left-radius : 8px;
+  border-bottom-right-radius: 8px;
+
+  &:last-child {
+    border-bottom-left-radius : 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+.option {
+  text-align : start;
+  padding    : 0.5rem;
+  font-weight: 500;
+
+  &:hover {
+    background: $grayAccent;
+  }
+}

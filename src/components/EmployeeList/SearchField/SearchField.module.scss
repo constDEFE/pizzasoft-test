@@ -1,0 +1,14 @@
+@import "../../../utils/variables.scss";
+
+.form {
+  margin: 0 auto;
+  width : 90%;
+
+  @media (min-width: $breakpointMd) {
+    width: 80%;
+  }
+}
+
+.input {
+  width: 100%;
+}

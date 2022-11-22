@@ -1,0 +1,27 @@
+@import "../../utils/variables.scss";
+
+.header {
+  display       : flex;
+  padding       : 1rem 0;
+  flex-direction: column;
+  align-items   : center;
+  gap           : 1rem;
+}
+
+.main {
+  width         : 100%;
+  margin        : 0 auto;
+  padding-bottom: 1rem;
+  border-radius : 1rem;
+  background    : #fff;
+  font-size     : $fontXS;
+
+  @media (min-width: $breakpointSm) {
+    font-size: $fontSm;
+  }
+
+  @media (min-width: $breakpointMd) {
+    width    : 80%;
+    font-size: $fontMd;
+  }
+}
